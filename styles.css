@@ -1,0 +1,198 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+nav {
+  position: absolute;
+  top: 80px;
+  left: 25%;
+  width: 50%;
+  /* border: 1px solid #000; */
+  background-image: linear-gradient(#666, #aaa);
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li{
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-left: 1px solid #888;
+  color: white;
+  font-size: 13px;
+}
+nav li:first-child{
+  border-left: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+nav li:last-child{
+  border-left: none;
+}
+nav li:hover {
+  background: rgba(0,0,0,0.3);
+}
+nav li:last-child:hover {
+  background: inherit;
+}
+
+/* Hero */
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 1440px; 
+  height: 70vh;
+  background: url("assets/images/your_verse_hero.jpg") 50% 100% no-repeat;
+  background-size: 1440px 1325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+}
+
+.hero-h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.hero-h2 {
+  font-size: 30px;
+}
+
+/* Promo */
+
+.promo {
+  width: 1440px;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-img {
+  width: calc(25% - 2px);
+}
+
+.promo img {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-around;
+  color: #6e6e6e;
+  margin-top: 20px;
+  max-width: 980px;
+}
+
+footer a {
+  color: #08c;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links li {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+.footer-links li:first-child {
+  border-left: none;
+  margin-left: 0;
+}
+
+.copywrite {
+  margin-top: 20px;
+}
+
+.copywrite ul {
+  display: flex;
+}
+
+.private-policy {
+  border-left: 1px #ccc solid;
+  padding-left: 5px;
+  margin-left: 5px;
+}
